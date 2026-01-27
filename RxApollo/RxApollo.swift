@@ -8,6 +8,7 @@
 
 import Foundation
 import RxSwift
+import Apollo
 
 
 /// An `Error` emitted by `ApolloReactiveExtensions`.
