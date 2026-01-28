@@ -1,2 +1,2 @@
-github "apollographql/apollo-ios" ~> 0.7
+git "git@github.com:nubank/apollo-ios.git" "18d89aaf834d1d5e4f2d7053671cfcf77b93e641"
 github "ReactiveX/RxSwift" ~> 4.0
