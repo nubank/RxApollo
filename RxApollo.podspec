@@ -16,7 +16,8 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '9.0'
   s.source_files = 'RxApollo/*.swift'
 
-  s.dependency 'Apollo', '~> 0.7.0'
-  s.dependency 'RxSwift', '~> 4.0'
+  # s.dependency 'Apollo', '~> 0.7.0'
+  s.dependency 'Apollo', git: 'git@github.com:nubank/apollo-ios', :commit => '18d89aaf834d1d5e4f2d7053671cfcf77b93e641'
+  s.dependency 'RxSwift', '~> 5.0'
 
 end
