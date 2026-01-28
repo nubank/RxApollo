@@ -7,7 +7,7 @@
 //
 
 import XCTest
-
+import Apollo
 import RxSwift
 import RxApollo
 import RxBlocking

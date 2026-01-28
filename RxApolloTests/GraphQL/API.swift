@@ -1,6 +1,6 @@
 //  This file was automatically generated and should not be edited.
 
-
+import Apollo
 
 /// The episodes in the Star Wars trilogy
 public enum Episode: RawRepresentable, Equatable, Apollo.JSONDecodable, Apollo.JSONEncodable {
