@@ -17,6 +17,7 @@ Pod::Spec.new do |s|
   s.source_files = 'RxApollo/*.swift'
 
   s.dependency 'Apollo'
-  s.dependency 'RxSwift', '~> 6.0'
+  # RxSwift is provided externally (via Carthage)
+  # s.dependency 'RxSwift', '~> 6.0'
 
 end
