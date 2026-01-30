@@ -19,8 +19,9 @@ Pod::Spec.new do |s|
   s.dependency 'Apollo'
   # RxSwift provided via Carthage - do not add as pod dependency
   s.pod_target_xcconfig = {
-    'FRAMEWORK_SEARCH_PATHS' => '$(inherited) "${PODS_ROOT}/../Carthage/Build/RxSwift.xcframework/ios-arm64_x86_64-simulator" "${PODS_ROOT}/../Carthage/Build/RxSwift.xcframework/ios-arm64"',
+    'FRAMEWORK_SEARCH_PATHS' => '$(inherited) "${PODS_ROOT}/../Carthage/Build/RxSwift.xcframework/ios-arm64_i386_x86_64-simulator" "${PODS_ROOT}/../Carthage/Build/RxSwift.xcframework/ios-arm64_armv7"',
     'OTHER_LDFLAGS' => '$(inherited) -framework "RxSwift"'
   }
+  s.swift_version = '5.0'
 
 end
