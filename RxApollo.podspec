@@ -17,6 +17,9 @@ Pod::Spec.new do |s|
   s.source_files = 'RxApollo/*.swift'
 
   s.dependency 'Apollo'
-  s.dependency 'RxSwift', '~> 6.0'
+  # RxSwift provided externally via Carthage
+  s.xcconfig = {
+    'FRAMEWORK_SEARCH_PATHS' => '$(inherited) "${PODS_ROOT}/../Carthage/Build"'
+  }
 
 end
