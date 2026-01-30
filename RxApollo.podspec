@@ -17,14 +17,6 @@ Pod::Spec.new do |s|
   s.source_files = 'RxApollo/*.swift'
 
   s.dependency 'Apollo'
-  # RxSwift provided externally via Carthage xcframeworks
-  # The paths point to the framework inside the xcframework bundle
-  s.pod_target_xcconfig = {
-    'FRAMEWORK_SEARCH_PATHS' => '$(inherited) "${PODS_ROOT}/../Carthage/Build/RxSwift.xcframework/ios-arm64_x86_64-simulator" "${PODS_ROOT}/../Carthage/Build/RxSwift.xcframework/ios-arm64"',
-    'OTHER_LDFLAGS' => '$(inherited) -framework "RxSwift"'
-  }
-  s.user_target_xcconfig = {
-    'FRAMEWORK_SEARCH_PATHS' => '$(inherited) "${PODS_ROOT}/../Carthage/Build/RxSwift.xcframework/ios-arm64_x86_64-simulator" "${PODS_ROOT}/../Carthage/Build/RxSwift.xcframework/ios-arm64"'
-  }
+  s.dependency 'RxSwift', '~> 6.0'
 
 end
